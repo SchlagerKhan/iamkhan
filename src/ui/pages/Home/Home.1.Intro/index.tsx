@@ -1,5 +1,6 @@
 'use client';
 
+import { Title } from '~/ui/components';
 import cx from './index.module.css';
 
 import { TypeAnimation } from 'react-type-animation';
@@ -28,16 +29,16 @@ export function Home__Intro() {
     const animationProps: AnimationProps = {
         sequence,
 
-        wrapper: 'h1',
+        wrapper: 'span',
 
         speed: 10,
     };
 
     return (
         <section className="h-100dvh bg-red text-white flex flex-col justify-center items-center">
-            <div className={cx.title}>
+            <Title level={1} className="mb-6 text-8xl">
                 <TypeAnimation {...animationProps} />
-            </div>
+            </Title>
 
             <div className={cx.description}>
                 <hr />

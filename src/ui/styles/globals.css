@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .c__text {
+        font-family: var(--font-raleway);
+
+        letter-spacing: 2px;
+    }
+}
+
+p {
+    @apply c__text text-base;
+}

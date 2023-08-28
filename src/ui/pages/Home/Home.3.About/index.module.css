@@ -1,0 +1,13 @@
+#about {
+    @apply max-w-screen-md mx-auto py-12;
+}
+
+#about strong {
+    @apply text-xl;
+
+    font-weight: bold;
+}
+
+#about p {
+    @apply mb-4;
+}
